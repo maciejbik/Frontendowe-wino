@@ -17,3 +17,4 @@ powitanie('Maciek',17);
 
 
 //wpisz_do_elementu('.section__paragraph--js',powitanie('Maciek',17));
+

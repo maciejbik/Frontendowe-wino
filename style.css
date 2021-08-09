@@ -10,7 +10,9 @@ html
 /*Poprawne klasy*/
 /*Navigation*/
 .web-header
-{
+{   
+    min-height: 100px;
+    background: #0f8b8d8f;
     width: 100%;
     position: fixed;
     font-size: 20px;
@@ -21,6 +23,18 @@ html
     display: flex;
     justify-content: center;
     
+}
+.web-header__image-relative
+{
+    position: relative;
+}
+.web-header__image
+{
+    display: none;
+    right: 50px;
+    height: 70px;
+    top: 20px;
+    position: absolute;
 }
 .web-navigation__link
 {
@@ -174,6 +188,7 @@ html
 
 
 
+
 /*Wkurwiające*/
 .footer
 {
@@ -200,12 +215,32 @@ html
 }
 
 
-@media (max-width:375px) {
+
+
+@media (max-width:768px) {
     .document-header__heading
     {
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
+    .web-header__image
+    {
+        display: block;
+    }
+    .web-navigation
+    {
+        display: none;
+        flex-direction: column;
+    }
+    .web-navigation__link
+    {
+        width: 70%;
+    }
+    .web-navigation--js
+    {
+        display: flex;
+    }
+
 
 }
 
