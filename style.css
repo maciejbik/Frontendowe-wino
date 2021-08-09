@@ -11,29 +11,32 @@ html
 /*Navigation*/
 .web-header
 {
-    font-size: 30px;
+    width: 100%;
+    position: fixed;
+    font-size: 20px;
 }
 .web-navigation
 {
-    background: #0F8B8D;
+    background: #0f8b8d8f;
     display: flex;
     justify-content: center;
     
 }
 .web-navigation__link
 {
-    background: #052f2f3f;
+    background: #268d8d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 7px  #14364265;
     text-decoration: none;
     color:white;
-    margin: 20px 60px;  
+    margin: 20px 30px;  
 }
 
 /*Main*/
 .main
 {
+    margin: 100px;
     max-width: 1000px;
 }
 .main-center
@@ -59,8 +62,10 @@ html
 }
 .document-header__heading
 {
+    text-align: center;
     width: 100%;
-    color: #E77728;
+    color: #ff430ae8;
+    text-shadow: #f4d293d2 1px 1px;
     padding-left: 20px;
     align-self: center;
     font-size: 40px;
