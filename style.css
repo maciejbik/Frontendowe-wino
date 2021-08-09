@@ -1,7 +1,5 @@
 html
 {
-    display: flex;
-    justify-content: center;
     background: rgb(217, 215, 255);
     background: linear-gradient(0deg, #DB2763 0%, rgb(240, 210, 43) 100%);
     min-height: 100%;
@@ -13,24 +11,36 @@ html
 /*Navigation*/
 .web-header
 {
-
+    font-size: 30px;
 }
 .web-navigation
 {
     background: #0F8B8D;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 .web-navigation__link
 {
+    background: #052f2f3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 7px  #14364265;
+    text-decoration: none;
     color:white;
-    margin: 20px;  
+    margin: 20px 60px;  
 }
 
 /*Main*/
 .main
 {
     max-width: 1000px;
+}
+.main-center
+{
+    
+    display: flex;
+    justify-content: center;
 }
 
 /*Header*/
