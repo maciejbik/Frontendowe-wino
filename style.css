@@ -30,8 +30,7 @@ html
 /*Main*/
 .main
 {
-    min-width: 400px;
-    width: 50vw;
+    max-width: 1000px;
 }
 
 /*Header*/
@@ -43,9 +42,10 @@ html
 }
 .document-header__image
 {
+    top: 30%;
     padding: 10px;
     align-self: center;
-    height: 60px;
+    height: 100px;
 }
 .document-header__heading
 {
@@ -53,7 +53,7 @@ html
     color: #E77728;
     padding-left: 20px;
     align-self: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /*Sections*/
@@ -66,10 +66,12 @@ html
 }
 .section__header
 {
+    font-size: 30px;
     color: #DB2763;
 }
 .section__paragraph
 {
+    font-size: 23px;
     color: #0F8B8D;
 }
 .section__img-center
@@ -83,7 +85,7 @@ html
     border-radius: 200px;
     padding: 20px;
     margin: 10px;
-    width: 50%;
+    width: 300px;
 }
 /*Articles*/
 .article
@@ -98,15 +100,78 @@ html
 {
     color: #0F8B8D;
 }
+/*Section-grid*/
+.section-grid
+{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.section-grid__heading
+{
+    color: #E77728;
+}
+.section-grid__article
+{
+    border: crimson 2px dotted;
+    column-gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    "heading heading"
+    "paragraph aside"
+    "footer footer";
+    grid-template-columns: 1fr 300px;
+    border: 2px dotted #E77728;
+    padding: 20px;
+}
+.section-grid__article-heading
+{
+    padding: 10px;
+    text-align: center;
+    color: #e728be;
+    background: rgba(165, 42, 42, 0.294);
+    grid-area: heading;
+}
+.section-grid__article-paragraphs
+{
+    background-color: rgba(233, 149, 14, 0.116);
+    color:#0F8B8D;
+    grid-area: paragraph;
+}
+
+.section-grid__article-aside
+{
+    flex-direction: column;
+    background-color: antiquewhite;
+    display: flex;
+    padding: 5px 20px;
+    align-self: center;
+    color:rgb(52, 82, 255);
+    grid-area: aside;
+}
+.section-grid__article-footer
+{
+    background: coral;
+    text-align: center;
+    grid-area: footer;
+}
+
 
 
 
 /*Wkurwiające*/
 .footer
 {
-    padding: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3px 10px;
     background: rgb(255, 255, 255);
     color: #E77728;
+}
+.footer__paragraph
+{
+    font-size: 20px;
 }
 
 
@@ -120,10 +185,12 @@ html
 }
 
 
-@media (max-width:768px) {
-    .header-heading
+@media (max-width:375px) {
+    .document-header__heading
     {
         font-size: 20px;
+        text-align: center;
     }
+
 }
 

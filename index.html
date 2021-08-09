@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend-owe Wino</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="web-header">
-      <nav class="web-navigation">
-        <a class="web-navigation__link" href="index.html">Główna</a>
-        <a class="web-navigation__link" href="nauka-html.html">Nauka html</a>
-        <a class="web-navigation__link" href="wino-z-jablek.html">Wino z jabłek</a>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend-owe Wino</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="web-header">
+    <nav class="web-navigation">
+      <a class="web-navigation__link" href="index.html">Główna</a>
+      <a class="web-navigation__link" href="nauka-html.html">Nauka html</a>
+      <a class="web-navigation__link" href="wino-z-jablek.html">Wino z jabłek</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--Document header-->
+    <header class="document-header" id="top">
+      <img class="document-header__image" src="wino.png" alt="logo Frontend-owego wina" />
+      <h1 class="document-header__heading">
+        Frontend-owe Wino – Strona domowa
+      </h1>
     </header>
+    <!--Sections-->
+    <section class="section">
+      <h2 class="section__header">O czym jest ta strona?</h2>
+      <p class="section__paragraph">
+        Witaj na mojej stronie! Strona jest przeznaczona praktyce i nauce
+        frontend-u. Tematyką strony jest produkcja i historia wina.
+      </p>
+      <div class="section__img-center">
+        <img class="section__img" src="img/nalewanie-wina.jpg" />
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__header">Puste elementy w JS</h2>
+      <p class="section__paragraph section__paragraph--js"></p>
+    </section>
 
-    <main class="main">
-      <!--Document header-->
-      <header class="document-header" id="top">
-        <img
-          class="document-header__image"
-          src="wino.png"
-          alt="logo Frontend-owego wina"
-        />
-        <h1 class="document-header__heading">Frontend-owe Wino – Strona domowa</h1>
-      </header>
-      <!--Sections-->
-      <section class="section">
-        <h2 class="section__header">O czym jest ta strona?</h2>
-        <p class="section__paragraph">
-          Witaj na mojej stronie! Strona jest przeznaczona praktyce i nauce
-          frontend-u. Tematyką strony jest produkcja i historia wina.
-        </p>
-        <div class="section__img-center">
-          <img class="section__img" src="img/nalewanie-wina.jpg" />
-        </div>
-      </section>
+    <!--Section grid-->
+    <section class="section">
+      <h2 class="section__header">Używanie Display Grida</h2>
+      <p class="section__paragraph">Display grid jest spoko, ponieważ umożliwia fajne układanie elementów na stronie
+        takich jak artykuły sekcje czy
+        treści poboczne. Przydaje się do budowania layoutów. Nie zastepuje on flexboxa ale się dobrze uzupełniają.</p>
+      <div class="section-grid">
+        <h1 class="section-grid__heading">Pokaz działania grida na stronie</h1>
+        <article class="section-grid__article">
+          <h3 class="section-grid__article-heading">Działanie display: grid</h3>
+          <div class="section-grid__article-paragraphs">
+            <p class="section__paragraph">Display grid jest bardzo łatwy do użytku, ale trzeba znać zasady jego działania.</p>
+            <p class="section__paragraph">W tym przypadku grida użyłem na 2 paragrafy jeden znacznik div który osadziłem w gridzie
+              aby połączyć oba. Nie jestem pewny czy jest to poprawna forma stylowania, ale wizualnie działa jak chciałem.
+            </p>
+          </div>
+          <aside class="section-grid__article-aside">Treść poboczna jest oznaczana znacznikiem < aside >. Znacznik przydaje się do informacji mniejszej wartości, ale odnoszące się do tekstu. Najlepiej używać ich obok tekstu, do którego się odnoszą. Tym razem wyśrodkowałem tą treść flexboxem, ponieważ testowałem działanie. </aside>
+          <footer class="section-grid__article-footer">Footer of the article </footer>
+        </article>
+      </div>
+    </section>
 
-      <footer class="footer">
+    <footer class="footer">
+      <p class="footer__paragraph">
         Strona domowa Maćka Bika, wszystkie treści są efektem tworzenia
         szkolenia WTF: Co ten frontend.<br />
         <a href="#top">Przejdz na górę strony</a>
-      </footer>
+      </p>
+    </footer>
 
-      <script src="main.js"></script>
-    </main>
-  </body>
+    <script src="main.js"></script>
+  </main>
+</body>
+
 </html>
